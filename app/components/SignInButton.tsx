@@ -23,7 +23,7 @@ export default function SignInButton() {
                     <Image src="/next.svg" width={100} height={100} alt='Logo' />
                 </>
             ) : (
-                <>
+                
                 <button
                         type='button'
                         className='text-white bg-blue-700 py-2 px-4 rounded-md hover:bg-blue-500'
@@ -31,7 +31,6 @@ export default function SignInButton() {
                     >
                         Login
                 </button>
-                </>
             )}
         </>
   )
