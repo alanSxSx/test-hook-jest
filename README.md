@@ -22,21 +22,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 #.ENV.LOCAL
 
-NEXTAUTH_SECRET=SUA CHAVE SECRETA
-AUTH_SECRET=SUA CHAVE SECRETA
-GOOGLE_CLIENT_ID=SEU CLIENT ID DO GOOGLE
-GOOGLE_CLIENT_SECRET=SEU CLIENT SECRET DO GOOGLE
+<p>NEXTAUTH_SECRET=SUA CHAVE SECRETA</p>
+<p>AUTH_SECRET=SUA CHAVE SECRETA</p>
+<p>GOOGLE_CLIENT_ID=SEU CLIENT ID DO GOOGLE</p>
+<p>GOOGLE_CLIENT_SECRET=SEU CLIENT SECRET DO GOOGLE</p>
+<br>
+-----------------------------------------------------------------------------------------------------------
+<br>
+<br>
 
-VOCÊ CONSEGUE ESSE CLIENT ID E O CLIENT SECRET NO SEGUINTE LINK:
-
-
-//CONFIGURAÇÃO PARA CONSEGUIR O CLIENT_ID E O CLIENT_SECRET
-https://console.developers.google.com/apis/credentials
+➡️CONFIGURAÇÃO PARA CONSEGUIR O CLIENT_ID E O CLIENT_SECRET
+<br>
+<p>https://console.developers.google.com/apis/credentials</p>
 
 ⚠️MUITO IMPORTANTE⚠️
 
-QUANTO ESTIVER FAZENDO A CONFIGURAÇÃO NO CAMPO "URIs de redirecionamento autorizados" ADICIONAR O ENDEREÇO: http://localhost:3000/api/auth/callback/google
+QUANTO ESTIVER FAZENDO A CONFIGURAÇÃO NO CAMPO "URIs de redirecionamento autorizados" ADICIONAR O ENDEREÇO: 
+<p>http://localhost:3000/api/auth/callback/google</p>
 
-//DOCUMENTAÇÃO
+📄DOCUMENTAÇÃO
+
 https://developers.google.com/identity/protocols/oauth2
 
