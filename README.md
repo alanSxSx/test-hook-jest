@@ -14,23 +14,29 @@ pnpm dev
 bun dev
 ```
 
+TAMBÉM PODERÁ EXECUTAR OS TESTES COM O npm run test:dev OU npm run test:cov
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⚠️ ATENÇÃO. PARA A AUTENTICAÇÃO FUNCIONAR, PRIMEIRAMENTE TERÁ QUE CRIAR UM ARQUIVO .ENV.LOCAL PARA GUARDAR AS CONFIGURAÇÕES DE AUTENTICAÇÃO. ⚠️
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#.ENV.LOCAL
 
-## Learn More
+NEXTAUTH_SECRET=SUA CHAVE SECRETA
+AUTH_SECRET=SUA CHAVE SECRETA
+GOOGLE_CLIENT_ID=SEU CLIENT ID DO GOOGLE
+GOOGLE_CLIENT_SECRET=SEU CLIENT SECRET DO GOOGLE
 
-To learn more about Next.js, take a look at the following resources:
+VOCÊ CONSEGUE ESSE CLIENT ID E O CLIENT SECRET NO SEGUINTE LINK:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+//CONFIGURAÇÃO PARA CONSEGUIR O CLIENT_ID E O CLIENT_SECRET
+https://console.developers.google.com/apis/credentials
 
-## Deploy on Vercel
+⚠️MUITO IMPORTANTE⚠️
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+QUANTO ESTIVER FAZENDO A CONFIGURAÇÃO NO CAMPO "URIs de redirecionamento autorizados" ADICIONAR O ENDEREÇO: http://localhost:3000/api/auth/callback/google
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+//DOCUMENTAÇÃO
+https://developers.google.com/identity/protocols/oauth2
+
