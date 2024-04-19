@@ -14,23 +14,33 @@ pnpm dev
 bun dev
 ```
 
+TAMBÉM PODERÁ EXECUTAR OS TESTES COM O npm run test:dev OU npm run test:cov
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⚠️ ATENÇÃO. PARA A AUTENTICAÇÃO FUNCIONAR, PRIMEIRAMENTE TERÁ QUE CRIAR UM ARQUIVO .ENV.LOCAL PARA GUARDAR AS CONFIGURAÇÕES DE AUTENTICAÇÃO. ⚠️
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#.ENV.LOCAL
 
-## Learn More
+<p>NEXTAUTH_SECRET=SUA CHAVE SECRETA</p>
+<p>AUTH_SECRET=SUA CHAVE SECRETA</p>
+<p>GOOGLE_CLIENT_ID=SEU CLIENT ID DO GOOGLE</p>
+<p>GOOGLE_CLIENT_SECRET=SEU CLIENT SECRET DO GOOGLE</p>
+<br>
+-----------------------------------------------------------------------------------------------------------
+<br>
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+➡️CONFIGURAÇÃO PARA CONSEGUIR O CLIENT_ID E O CLIENT_SECRET
+<br>
+<p>https://console.developers.google.com/apis/credentials</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+⚠️MUITO IMPORTANTE⚠️
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+QUANTO ESTIVER FAZENDO A CONFIGURAÇÃO NO CAMPO "URIs de redirecionamento autorizados" ADICIONAR O ENDEREÇO: 
+<p>http://localhost:3000/api/auth/callback/google</p>
 
-## Deploy on Vercel
+📄DOCUMENTAÇÃO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://developers.google.com/identity/protocols/oauth2
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
