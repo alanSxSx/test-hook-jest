@@ -4,8 +4,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-    <p className="text-2xl">Seja bem vindo ao sistema.</p>
+    <div className="flex flex-col items-center justify-center min-h-screen gap-12">
+      <Image src="/vercel.svg" className="flex items-center justify-center" width={300} height={300} alt='Logo' />
+      <p className="text-6xl flex text-center">Seja bem vindo.</p>
     </div>
   );
 }
