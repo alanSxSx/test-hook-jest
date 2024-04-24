@@ -14,7 +14,7 @@ export default function PageHomeLogged() {
     }
 
     return (
-        <div className='flex flex-col items-center justify-center gap-6 mt-10'>
+        <div className='flex flex-col items-center justify-center gap-6 mt-10' data-testid="divPageHomeLoggedComponent">
             <span className='text-2xl'>Seja Bem Vindo</span>
             <span className='text-2xl'>Seu nome é: {exibirOcultar ? '' : <b>{session?.user?.name}</b>}</span>
             <span>Seu e-mail cadastrado é: {exibirOcultar ? '' : <b>{session?.user?.email}</b>}</span>

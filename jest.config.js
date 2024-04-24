@@ -59,7 +59,13 @@ const createJestConfig = nextJest({
 
 const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+  moduleDirectories: ["node_modules", "<rootDir>/"],
   testEnvironment: "jsdom",
-};
-
+  transform: {
+    "^.+\\.jsx?$": "babel-jest"
+  },
+}
 module.exports = createJestConfig(customJestConfig);
+
+
+
