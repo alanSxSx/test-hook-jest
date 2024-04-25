@@ -14,7 +14,7 @@ export default async function Home() {
     <>
       {session ? (
         <>
-         {/* <PageHomeLogged data-testid="pageHomeLoggedComponent"/> */}
+        <PageHomeLogged/>
         </>
       ) : (
         <div className="flex flex-col items-center justify-center min-h-screen gap-12" data-testid="divHomeNotLogged">

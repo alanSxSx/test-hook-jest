@@ -13,7 +13,7 @@ jest.mock("next-auth/react");
 describe('Test component Header', () => {
     it('should render component home ', () => {
 
-        const session = { 
+        const session = {
             user: { name: 'John Doe' },
             expires: '2025-01-01T00:00:00.000Z' // add this line
         };
