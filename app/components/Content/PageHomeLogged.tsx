@@ -19,7 +19,7 @@ export default function PageHomeLogged() {
             <span className='text-2xl'>Seu nome é: {exibirOcultar ? '' : <b>{session?.user?.name}</b>}</span>
             <span>Seu e-mail cadastrado é: {exibirOcultar ? '' : <b>{session?.user?.email}</b>}</span>
             <span>Clique no botão para ocultar seu nome e email:</span>
-            <button className='text-white bg-blue-700 py-2 px-4 rounded-md hover:bg-blue-500' onClick={exibirOuOcultarNomeEmail}>{exibirOcultar ? 'Exibir Mensagem' : 'Ocultar Mensagem'}</button>
+            <button className='text-white bg-blue-700 py-2 px-4 rounded-md hover:bg-blue-500' onClick={exibirOuOcultarNomeEmail} data-testid="ButtonExibirOcultar">{exibirOcultar ? 'Exibir Mensagem' : 'Ocultar Mensagem'}</button>
         </div>
     )
 }
